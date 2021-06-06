@@ -1,5 +1,293 @@
-/* generics */
+/* reset */
 *{
     box-sizing: border-box;
     margin: 0;
 }
+
+/* UTILITY */
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-blue{
+    color: #7289DA;
+}
+
+.vertical-align{
+    vertical-align: middle;
+}
+
+.column.w-17{
+    width: 17.5%;
+    padding: 0;
+}
+
+.column.w-30{
+    width: 30%;
+    padding: 0;
+    padding-right: 13%;
+}
+
+.column.w-20{
+    width: 20%;
+}
+
+.column.w-60{
+    width: 60%;
+}
+
+.white-text{
+    color: white;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.title{
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+/* UTILITY/ buttons */
+.btn{
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    text-decoration: underline;
+}
+
+.btn-light{
+    color: black;
+    background-color: white;
+}
+
+.btn-dark{
+    color:white;
+    background-color: #23272A;
+}
+
+.btn-blue{
+    color: white;
+    background-color: #8EA1E1;
+}
+
+.btn-small{
+    padding: 10px 20px;
+}
+
+.btn-big{
+    padding: 10px 30px;
+}
+
+/* header */
+.topbar{
+    width: 100%;
+    height: 100px;
+    background-color: #3161E0;
+}
+
+.container{
+    width: 100%;
+    line-height: 100px;
+    margin: 0 auto;
+}
+
+#logo{
+    vertical-align: middle;
+}
+
+.column{
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 100px;
+    float: left;
+}
+
+.navigation li{
+    display: inline-block;
+}
+
+.navigation li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.navigation li a:hover{
+    text-decoration: underline;
+}
+
+.spotlight{
+    position: relative;
+    height: 600px;
+    background-color: #3161E0;
+    background-image: url(../img/spotlight.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper-spotlight{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    width: 45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.spotlight h2{
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+.spotlight,
+.wrapper-spotlight > * {
+    margin-bottom: 30px;
+}
+
+.spotlight .wrapper-spotlight .btn-big{
+    margin-left: 50px;
+}
+
+/* main */
+.full-page{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    /* border: 1px solid; */
+}
+
+.full-page .wave{
+    width: 200%;
+    animation: wave linear 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes wave {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+.section-body.grey{
+    background-color:#F6F6F6;
+    height: 100%;
+    position: relative;
+    bottom: 5px;
+}
+
+.section-body .container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section-body .container .column{
+    position: relative;
+    width: 50%;
+    font-size: 20px;
+    line-height: normal;
+}
+
+
+.section-body .container .column-text{
+    padding: 0 300px;
+}
+
+.section-body .container .column-image img{
+    position: absolute;
+}
+
+.full-page.light{
+    background-color: white;
+}
+
+.full-page.page-1{
+   padding-top: 200px;
+}
+
+.full-page .container-image{
+    border: 5px solid;
+    text-align: center;
+}
+
+.text-item4{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.download{
+    background-color: #F6F6F6;
+    padding-bottom: 150px;
+}
+
+.stars{
+    font-size: 25px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 50px;
+    background-image: url(../img/stars.svg);
+    background-size: cover;
+}
+
+.download-btn{
+    font-size: 25px;
+}
+
+footer{
+    background-color: #23272A;
+    height: 700px;
+    padding-top: 100px;
+}
+
+.footer-container{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+footer h2{
+    font-size: 30px;
+}
+
+.column .languages{
+    padding-top: 20px;
+}
+
+.column .languages img{
+    height: 20px;
+}
+
+.column.w-17 ul{
+    list-style: none;
+    color: white;
+}
+
+.column.w-17 ul li{
+    margin-bottom: 10px;
+}
+
+/* E' UN PO IN DISORDINE, FARO' PULIZIA NEI PROSSIMI GIORNI, SCUSATE T.T  */
